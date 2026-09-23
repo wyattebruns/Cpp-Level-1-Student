@@ -6,7 +6,6 @@ int main()
     int number_of_scores;
     float score;
     int highest;
-    bool first;
    
     cout << "How many scores do you want to use!\n";
     cin >> number_of_scores;
@@ -25,11 +24,11 @@ int main()
    
    cout <<endl;
    
+   highest = scores[0];
    
     for(float val : scores){
-  if(first || val > highest){
+  if(val > highest){
            highest = val;
-           first = false;
         }
 
     }
@@ -40,6 +39,5 @@ int main()
 
     return 0;
 }
-
 
 https://onecompiler.com/cpp/4526ymwbv
